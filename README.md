@@ -26,11 +26,13 @@ $ touch /media/USER/boot/SSH
 $ nano /media/USER/rootfs/etc/dhcpcd.conf 
 ```
 
-\# Example static IP configuration: (by default is 192.168.0.10, but you can put what you want 192.168.x.x)
+```sh
+# Example static IP configuration: (by default is 192.168.0.10, but you can put what you want 192.168.x.x)
 interface wlan0
 static ip_address=192.168.0.10/24
 static routers=192.168.0.1
 static domain_name_servers=192.168.0.1 8.8.8.8 8.8.4.4
+```
 
 4.-Setup WIFI connection, go into the next path "/media/USER/rootfs/etc/wpa_supplicant/wpa_supplicant.conf", using the next command :
 ```sh
